@@ -34,7 +34,7 @@ class ProxyValidSchedule(ProxyManager):
         while 1:
             self.db.changeTable(self.useful_proxy_queue)
             for each_proxy in self.db.getAll():
-                if validUsefulProxy(each_proxy):
+                if validUsefulProxy(each_proxy.decode("utf-8")):
                     self.log.debug('validProxy_b: {} validation pass'.format(each_proxy))
                 else:
                     self.db.delete(each_proxy)
