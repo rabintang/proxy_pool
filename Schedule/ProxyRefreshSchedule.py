@@ -81,7 +81,7 @@ def main(process_num=30):
 
 
 def run():
-    # main()
+    main()
     sched = BlockingScheduler()
     sched.add_job(main, 'interval', minutes=10)
     sched.start()

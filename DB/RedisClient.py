@@ -82,5 +82,5 @@ if __name__ == '__main__':
 
     redis_con.put('132.112.43.221:8888')
     # redis_con.changeTable('proxy')
-    print redis_con.get_status()
-    print redis_con.getAll()
+    print(redis_con.get_status())
+    print(redis_con.getAll())

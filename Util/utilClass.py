@@ -33,7 +33,7 @@ class LazyProperty(object):
             return value
 
 
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 
 
 class ConfigParse(ConfigParser):
